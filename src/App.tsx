@@ -1,8 +1,11 @@
+import PageWrapper from '@/components/PageWrapper';
+import MainView from '@/views/MainView';
+
 function App(): JSX.Element {
   return (
-    <div>
-      <h1>GraphQl SkillUp</h1>
-    </div>
+    <PageWrapper>
+      <MainView />
+    </PageWrapper>
   );
 }
 
