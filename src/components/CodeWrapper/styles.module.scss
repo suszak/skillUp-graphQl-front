@@ -1,0 +1,63 @@
+@import '@/styles/_variables.scss';
+
+.container {
+  display: flex;
+  flex-direction: column;
+
+  border: 1px solid rgba($white, 0.2);
+  border-radius: 8px;
+  overflow: hidden;
+
+  min-width: 500px;
+
+  pre {
+    margin: 0;
+
+    code {
+      font-family: 'Fira Code', sans-serif;
+      font-size: 16px;
+    }
+  }
+}
+
+.statusBar {
+  width: 100%;
+  background-color: rgba($black, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 4px 8px;
+
+  p {
+    font-weight: 600;
+    color: rgba($white, 0.7);
+  }
+
+  div {
+    width: 52px;
+  }
+}
+
+.dotsWrapper {
+  display: flex;
+  gap: 8px;
+
+  div {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+
+    &:nth-of-type(1) {
+      background-color: #f15d58;
+    }
+
+    &:nth-of-type(2) {
+      background-color: #f5bc30;
+    }
+
+    &:nth-of-type(3) {
+      background-color: #46c940;
+    }
+  }
+}

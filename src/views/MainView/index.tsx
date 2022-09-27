@@ -1,6 +1,7 @@
 import { ReactComponent as BackgroundWave } from '@/assets/background/wave1.svg';
 import { ReactComponent as GraphQLLogo } from '@/assets/graphql-logo.svg';
 import { ReactComponent as SkillUpLogo } from '@/assets/skillUp-logo.svg';
+import BeginButton from '@/components/BeginButton';
 
 import styles from './styles.module.scss';
 
@@ -18,6 +19,8 @@ const MainView = (): JSX.Element => {
           <GraphQLLogo />
         </div>
       </div>
+
+      <BeginButton />
 
       <div className={styles.background}>
         <BackgroundWave />
