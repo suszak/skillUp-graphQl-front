@@ -1,6 +1,6 @@
 @import '@/styles/_variables.scss';
 
-.mainViewContainer {
+.outroViewContainer {
   height: 100%;
   position: relative;
 }
@@ -23,32 +23,22 @@
   }
 }
 
-.logosWrapper {
-  margin: 64px 0;
-  display: flex;
-  gap: 128px;
-  align-items: end;
-}
-
-.logoWrapper {
-  width: 200px;
-}
-
 .background {
   position: absolute;
   bottom: -9.5px;
   width: 100%;
   z-index: -1;
+  transform: scale(-1, 1);
 
   animation: waving 1s ease-in-out;
 }
 
 @keyframes waving {
   0% {
-    transform: translateX(-2000px);
+    transform: scale(-1, 1) translateX(-2000px);
   }
 
   100% {
-    transform: translateX(0);
+    transform: scale(-1, 1) translateX(0);
   }
 }

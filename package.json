@@ -12,9 +12,14 @@
     "format:fix": "prettier --write ./src"
   },
   "dependencies": {
+    "@reduxjs/toolkit": "^1.8.5",
+    "@rtk-query/graphql-request-base-query": "^2.2.0",
     "classnames": "^2.3.2",
+    "graphql-request": "^5.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-redux": "^8.0.4",
+    "react-router-dom": "^6.4.1",
     "react-syntax-highlighter": "^15.5.0",
     "sass": "^1.54.9",
     "vite-plugin-svgr": "^2.2.1"
@@ -25,6 +30,7 @@
     "@types/react-dom": "^18.0.6",
     "@types/react-syntax-highlighter": "^15.5.5",
     "@vitejs/plugin-react": "^2.1.0",
+    "eslint": "8.22.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-config-react-app": "^7.0.1",
     "eslint-plugin-prettier": "^4.2.1",

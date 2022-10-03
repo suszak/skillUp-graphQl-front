@@ -26,7 +26,6 @@ module.exports = {
         'import/order': 'off',
         'simple-import-sort/imports': 'error',
         'simple-import-sort/exports': 'error',
-        quotes: ['error', 'single'],
         'no-console': 'warn',
         'no-unused-vars': 'off',
         '@typescript-eslint/no-unused-vars': [

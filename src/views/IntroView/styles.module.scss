@@ -1,0 +1,155 @@
+@import '@/styles/_variables.scss';
+
+.intro {
+  margin-top: 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 400px 1fr 400px;
+}
+
+.logo {
+  width: 128px;
+  justify-self: center;
+  align-self: center;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h1 {
+    font-size: 48px;
+  }
+
+  h2 {
+    font-size: 36px;
+  }
+
+  ol {
+    margin: 32px 0 0;
+
+    li {
+      font-size: 24px;
+
+      &:first-letter {
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+.timeline {
+  margin: 128px 0;
+  width: 700px;
+  height: 3px;
+  background-color: $white;
+  position: relative;
+}
+
+.point {
+  width: 24px;
+  height: 24px;
+  border: 2px solid $white;
+  border-radius: 50%;
+  background-color: $dark-grey;
+  transform: translateY(-50%);
+  position: absolute;
+  top: 50%;
+
+  &:nth-of-type(1) {
+    left: 10%;
+
+    &::before {
+      content: 'Roczpoczęcie projektu przez developerów Facebooka';
+    }
+
+    &::after {
+      content: '2012';
+    }
+  }
+
+  &:nth-of-type(2) {
+    left: 34%;
+
+    &::before {
+      content: 'Pierwsza publiczna wersja';
+    }
+
+    &::after {
+      content: '2015';
+    }
+  }
+
+  &:nth-of-type(3) {
+    left: 58%;
+
+    &::before {
+      content: 'Stworzenie GraphQL Foundation i odtąd ona zajmuje się rozwojem oraz pierwsza stabilna wersja';
+    }
+
+    &::after {
+      content: '2018';
+    }
+  }
+
+  &:nth-of-type(4) {
+    left: 90%;
+
+    &::before {
+      content: 'Używane m.in. przez: airbnb, github, meta, paypal, twitter';
+    }
+
+    &::after {
+      content: 'dziś';
+    }
+  }
+
+  &::before {
+    opacity: 0;
+    content: '';
+    position: absolute;
+    transform: translate(-50%, -100%);
+    width: 300px;
+    left: 50%;
+    top: -20px;
+    font-size: 18px;
+    text-align: center;
+    transition: $transition;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 40px;
+    font-size: 18px;
+  }
+
+  &:hover {
+    border-color: $blue;
+
+    &::before {
+      opacity: 1;
+    }
+  }
+}
+
+.arrow {
+  width: 19px;
+  height: 19px;
+  border-bottom: 3px solid $white;
+  border-right: 3px solid $white;
+  transform: translateY(-50%) rotate(-45deg);
+
+  position: absolute;
+  right: 0;
+  top: 50%;
+}

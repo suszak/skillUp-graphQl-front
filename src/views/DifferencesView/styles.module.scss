@@ -1,0 +1,116 @@
+@import '@/styles/_variables.scss';
+
+.differences {
+  margin: 64px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 400px 800px 400px;
+}
+
+.logo {
+  width: 128px;
+  justify-self: center;
+}
+
+.restLogo {
+  svg {
+    path {
+      fill: $white;
+    }
+  }
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h1 {
+    font-size: 48px;
+  }
+
+  h2 {
+    font-size: 36px;
+    margin-bottom: 32px;
+  }
+}
+
+.differencesList {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.differenceItem {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.differenceTitle {
+  font-size: 24px;
+
+  &:first-letter {
+    text-transform: uppercase;
+  }
+}
+
+.arrow {
+  width: 24px;
+  transition: $transition;
+}
+
+.arrowRotated {
+  transform: rotate(180deg);
+}
+
+.description {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-bottom: 1px solid $white;
+  border-radius: 12px;
+
+  div {
+    padding: 24px 48px;
+    text-align: center;
+
+    &:first-of-type {
+      position: relative;
+
+      &::after {
+        content: '';
+        width: 1px;
+        height: 100%;
+        background-color: $white;
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+    }
+  }
+}
+
+.descriptionImage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  border-bottom: 1px solid $white;
+  border-radius: 12px;
+
+  p {
+    width: 100%;
+    font-size: 12px;
+    text-align: end;
+  }
+}
